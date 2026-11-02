@@ -45,7 +45,7 @@ TBD — confirm the available tracks on Devpost. Suggested positioning: main tra
 
 ## Links
 
-- Source code: TBD (public GitHub repo)
+- Source code: https://github.com/muhammadfisabilillah/legacy-pilot
 - Demo video: TBD (YouTube unlisted or Loom)
 - Live demo: TBD (Render/Fly URL)
 - Screenshots: optional

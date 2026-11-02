@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: legacy-pilot
+    runtime: docker
+    # Chromium needs ~1 GB RAM. Use "free" only if you accept possible crashes.
+    plan: starter
+    healthCheckPath: /api/agent/state
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        value: openai/gpt-4o-mini
+      - key: AGENT_MAX_STEPS
+        value: "25"
+      - key: AGENT_TIMEOUT_MS
+        value: "180000"

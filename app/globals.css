@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b1020;
+  --foreground: #e7ecf5;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ---------- Deliberately dated mock clinic UI ---------- */
+.legacy-shell {
+  min-height: 100vh;
+  background: #cfd6df;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+}
+
+.legacy-banner {
+  background: linear-gradient(180deg, #1d4ed8 0%, #1e3a8a 55%, #172554 100%);
+  color: #fff;
+  border-bottom: 3px solid #facc15;
+  padding: 8px 14px;
+}
+
+.legacy-banner h1 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.legacy-banner .sub {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #c7d2fe;
+}
+
+.legacy-body {
+  display: flex;
+  min-height: calc(100vh - 74px);
+}
+
+.legacy-side {
+  width: 168px;
+  flex: none;
+  background: #e5e7eb;
+  border-right: 2px solid #6b7280;
+  padding: 10px 6px;
+}
+
+.legacy-side a {
+  display: block;
+  padding: 6px 8px;
+  margin-bottom: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #1e3a8a;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.legacy-side a:hover {
+  background: #fff;
+  border-color: #9ca3af;
+}
+
+.legacy-content {
+  flex: 1;
+  padding: 14px;
+  overflow-x: auto;
+}
+
+.legacy-panel {
+  background: #f3f4f6;
+  border: 1px solid #6b7280;
+  margin-bottom: 14px;
+}
+
+.legacy-panel h2 {
+  background: linear-gradient(180deg, #e5e7eb 0%, #cbd5e1 100%);
+  border-bottom: 1px solid #6b7280;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+  padding: 5px 8px;
+  color: #111827;
+}
+
+.legacy-panel .body {
+  padding: 10px;
+}
+
+.legacy-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background: #fff;
+}
+
+.legacy-table th {
+  background: #dbeafe;
+  border: 1px solid #9ca3af;
+  padding: 4px 6px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.legacy-table td {
+  border: 1px solid #cbd5e1;
+  padding: 4px 6px;
+  vertical-align: top;
+}
+
+.legacy-table tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+.legacy-field {
+  margin-bottom: 8px;
+}
+
+.legacy-field label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.legacy-field input,
+.legacy-field select,
+.legacy-field textarea {
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid #6b7280;
+  background: #fff;
+  padding: 3px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #111;
+}
+
+.legacy-field input[type="checkbox"] {
+  width: auto;
+}
+
+.legacy-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border: 1px solid #374151;
+  background: linear-gradient(180deg, #f9fafb 0%, #d1d5db 100%);
+  color: #111827;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.legacy-btn:hover {
+  background: linear-gradient(180deg, #fff 0%, #e5e7eb 100%);
+}
+
+.legacy-btn-primary {
+  background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%);
+  border-color: #1e3a8a;
+  color: #fff;
+}
+
+.legacy-btn-danger {
+  background: linear-gradient(180deg, #f87171 0%, #b91c1c 100%);
+  border-color: #7f1d1d;
+  color: #fff;
+}
+
+.legacy-error {
+  border: 1px solid #b91c1c;
+  background: #fee2e2;
+  color: #7f1d1d;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.legacy-success {
+  border: 1px solid #15803d;
+  background: #dcfce7;
+  color: #14532d;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.legacy-note {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #4b5563;
+}
+
+.legacy-badge {
+  display: inline-block;
+  border: 1px solid #6b7280;
+  background: #e5e7eb;
+  padding: 0 4px;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.legacy-badge-low {
+  background: #fecaca;
+  border-color: #b91c1c;
+  color: #7f1d1d;
+}
+
+.legacy-confirm {
+  border: 1px dashed #b91c1c;
+  background: #fff1f2;
+  padding: 6px;
+  margin-top: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
